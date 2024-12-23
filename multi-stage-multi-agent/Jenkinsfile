@@ -8,6 +8,7 @@ pipeline {
       steps {
         sh 'mvn install'
         sh 'javac helloworld.java'
+        sh 'java helloworld.java'
       }
     }
     stage('Front-end') {
